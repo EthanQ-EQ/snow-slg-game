@@ -350,3 +350,6 @@ html,body{
 
     background:#E7E2DA;
 }
+#hall-hitbox{
+    display:none !important;
+}
