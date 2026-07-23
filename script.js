@@ -1,87 +1,38 @@
-//======================
-// 数据
-//======================
+const hall = document.getElementById("hall-hitbox");
+const popup = document.getElementById("hall-popup");
 
-let hallLevel = 1;
+const closeBtn = document.getElementById("closeBtn");
+const upgradeBtn = document.getElementById("upgradeBtn");
 
-let wood = 5000;
+const hallLevel = document.getElementById("hallLevel");
+const wood = document.getElementById("wood");
+const food = document.getElementById("food");
 
-let food = 6000;
+let level = 1;
+let woodNum = 5000;
+let foodNum = 6000;
 
+hall.addEventListener("click", () => {
+    popup.style.display = "block";
+});
 
-//======================
-// DOM
-//======================
+closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+});
 
-const hall=document.getElementById("hall-hitbox");
+upgradeBtn.addEventListener("click", () => {
 
-const popup=document.getElementById("hall-popup");
-
-const closeBtn=document.getElementById("closeBtn");
-
-const upgradeBtn=document.getElementById("upgradeBtn");
-
-const hallLevelText=document.getElementById("hallLevel");
-
-const woodText=document.getElementById("wood");
-
-const foodText=document.getElementById("food");
-
-
-//======================
-// 点击建筑
-//======================
-
-hall.onclick=()=>{
-
-    popup.style.display="block";
-
-}
-
-
-//======================
-// 关闭
-//======================
-
-closeBtn.onclick=()=>{
-
-    popup.style.display="none";
-
-}
-
-
-//======================
-// 升级
-//======================
-
-upgradeBtn.onclick=()=>{
-
-    if(wood<500){
-
-        alert("木材不足");
-
+    if (woodNum < 500 || foodNum < 500) {
+        alert("资源不足");
         return;
-
     }
 
-    if(food<500){
+    woodNum -= 500;
+    foodNum -= 500;
+    level++;
 
-        alert("粮食不足");
+    hallLevel.textContent = level;
+    wood.textContent = woodNum;
+    food.textContent = foodNum;
 
-        return;
-
-    }
-
-    wood-=500;
-
-    food-=500;
-
-    hallLevel++;
-
-    hallLevelText.innerText=hallLevel;
-
-    woodText.innerText=wood;
-
-    foodText.innerText=food;
-
-}
+});
