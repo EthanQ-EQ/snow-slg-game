@@ -1,32 +1,87 @@
-// 城主府点击区域
-const hall = document.getElementById("hall-hitbox");
+//======================
+// 数据
+//======================
 
-// 弹窗
-const popup = document.getElementById("hall-popup");
+let hallLevel = 1;
 
-// 关闭按钮
-const closeBtn = document.getElementById("closeBtn");
+let wood = 5000;
 
-// 升级按钮
-const upgradeBtn = document.getElementById("upgradeBtn");
+let food = 6000;
 
-// 点击城主府
-hall.addEventListener("click", () => {
 
-    popup.style.display = "block";
+//======================
+// DOM
+//======================
 
-});
+const hall=document.getElementById("hall-hitbox");
 
-// 点击关闭
-closeBtn.addEventListener("click", () => {
+const popup=document.getElementById("hall-popup");
 
-    popup.style.display = "none";
+const closeBtn=document.getElementById("closeBtn");
 
-});
+const upgradeBtn=document.getElementById("upgradeBtn");
 
-// 点击升级
-upgradeBtn.addEventListener("click", () => {
+const hallLevelText=document.getElementById("hallLevel");
 
-    alert("升级成功！（后面接真实升级逻辑）");
+const woodText=document.getElementById("wood");
 
-});
+const foodText=document.getElementById("food");
+
+
+//======================
+// 点击建筑
+//======================
+
+hall.onclick=()=>{
+
+    popup.style.display="block";
+
+}
+
+
+//======================
+// 关闭
+//======================
+
+closeBtn.onclick=()=>{
+
+    popup.style.display="none";
+
+}
+
+
+//======================
+// 升级
+//======================
+
+upgradeBtn.onclick=()=>{
+
+    if(wood<500){
+
+        alert("木材不足");
+
+        return;
+
+    }
+
+    if(food<500){
+
+        alert("粮食不足");
+
+        return;
+
+    }
+
+    wood-=500;
+
+    food-=500;
+
+    hallLevel++;
+
+    hallLevelText.innerText=hallLevel;
+
+    woodText.innerText=wood;
+
+    foodText.innerText=food;
+
+}
