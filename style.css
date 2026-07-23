@@ -178,3 +178,78 @@ html,body{
 
     font-size:16px;
 }
+/* 左侧任务栏 */
+
+.task-panel{
+
+    position:absolute;
+
+    top:135px;
+
+    left:20px;
+
+    width:300px;
+
+    background:rgba(247,243,237,.92);
+
+    border-radius:24px;
+
+    padding:18px;
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+
+    z-index:100;
+}
+
+.task-title{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#4b433c;
+}
+
+.task-content{
+
+    margin-top:12px;
+
+    font-size:15px;
+
+    line-height:24px;
+
+    color:#746a62;
+}
+
+.task-btn{
+
+    width:100%;
+
+    height:46px;
+
+    margin-top:18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#E9D3A8;
+
+    color:#6A4A22;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.task-btn:hover{
+
+    transform:scale(1.03);
+
+}
