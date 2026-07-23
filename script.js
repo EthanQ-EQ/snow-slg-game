@@ -1,3 +1,4 @@
+alert("script.js 已加载");
 const hall = document.getElementById("hall-hitbox");
 const popup = document.getElementById("hall-popup");
 
