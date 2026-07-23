@@ -275,10 +275,6 @@ html,body{
 
     z-index:50;
 
-    /* 开发阶段先显示，方便调位置 */
-    border:2px dashed red;
-
-    background:rgba(255,0,0,.08);
 }
 
 
