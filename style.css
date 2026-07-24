@@ -587,3 +587,61 @@ html,body{
 
     z-index:130;
 }
+/* ===========================
+   城主府内部场景
+=========================== */
+
+#hall-scene{
+
+    position:absolute;
+
+    inset:0;
+
+    display:none;
+
+    z-index:1000;
+
+    background:#000;
+}
+
+#hall-inside-map{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    user-select:none;
+}
+
+#backToCity{
+
+    position:absolute;
+
+    left:20px;
+
+    top:20px;
+
+    width:140px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:rgba(247,243,237,.95);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    z-index:1001;
+}
