@@ -159,15 +159,17 @@ html,body{
 
     position:absolute;
 
-    top:20px;
+    top:16px;
 
     left:340px;
 
-    right:20px;
+    right:340px;
 
     display:flex;
 
-    gap:10px;
+    justify-content:space-between;
+
+    gap:8px;
 
     z-index:100;
 }
@@ -374,7 +376,7 @@ html,body{
 
     left:20px;
 
-    bottom:95px;
+    bottom:130px;
 
     display:flex;
 
@@ -410,7 +412,7 @@ html,body{
 
     position:absolute;
 
-    top:105px;
+    top:16px;
 
     right:20px;
 
@@ -450,7 +452,7 @@ html,body{
 
     right:20px;
 
-    top:330px;
+    top:300px;
 
     display:flex;
 
@@ -488,11 +490,11 @@ html,body{
 
     position:absolute;
 
-    left:110px;
+    left:20px;
 
-    bottom:20px;
+    bottom:18px;
 
-    width:430px;
+    width:520px;
 
     height:86px;
 
@@ -523,7 +525,7 @@ html,body{
 
     transform:translateX(-50%);
 
-    bottom:18px;
+    bottom:10px;
 
     display:flex;
 
@@ -561,7 +563,7 @@ html,body{
 
     right:24px;
 
-    bottom:18px;
+    bottom:10px;
 
     width:120px;
 
