@@ -5,6 +5,10 @@ const hall = document.getElementById("hall");
 const popup = document.getElementById("hall-popup");
 const closeBtn = document.getElementById("closeBtn");
 const upgradeBtn = document.getElementById("upgradeBtn");
+const enterBtn = document.getElementById("enterBtn");
+
+const hallScene = document.getElementById("hall-scene");
+const backToCity = document.getElementById("backToCity");
 
 const hallLevel = document.getElementById("hallLevel");
 const wood = document.getElementById("wood");
@@ -23,6 +27,21 @@ hall.addEventListener("click", function () {
 // 关闭窗口
 closeBtn.addEventListener("click", function () {
     popup.style.display = "none";
+});
+
+// 进入城主府
+enterBtn.addEventListener("click", function () {
+
+    popup.style.display = "none";
+    hallScene.style.display = "block";
+
+});
+
+// 返回主城
+backToCity.addEventListener("click", function () {
+
+    hallScene.style.display = "none";
+
 });
 
 // 升级
