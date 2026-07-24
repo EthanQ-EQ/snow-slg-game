@@ -345,3 +345,243 @@ html,body{
 
     background:#E7E2DA;
 }
+/* ===========================
+   UI 第二阶段
+=========================== */
+
+/* 左侧任务 */
+
+.task-item{
+
+    margin-top:14px;
+
+    padding:12px;
+
+    border-radius:14px;
+
+    background:#f8f5ef;
+
+    color:#6d6258;
+
+    font-size:15px;
+}
+
+/* 左下按钮 */
+
+.left-menu{
+
+    position:absolute;
+
+    left:20px;
+
+    bottom:95px;
+
+    display:flex;
+
+    gap:12px;
+
+    z-index:120;
+}
+
+.left-menu button{
+
+    width:72px;
+
+    height:72px;
+
+    border:none;
+
+    border-radius:22px;
+
+    background:rgba(247,243,237,.92);
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+    font-size:14px;
+
+    cursor:pointer;
+}
+
+/* 右上快捷 */
+
+.right-menu{
+
+    position:absolute;
+
+    top:105px;
+
+    right:20px;
+
+    display:flex;
+
+    gap:12px;
+
+    z-index:120;
+}
+
+.right-menu button{
+
+    width:72px;
+
+    height:72px;
+
+    border:none;
+
+    border-radius:22px;
+
+    background:rgba(247,243,237,.92);
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+    font-size:14px;
+
+    cursor:pointer;
+}
+
+/* 队列 */
+
+.queue-panel{
+
+    position:absolute;
+
+    right:20px;
+
+    top:330px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    z-index:120;
+}
+
+.queue-panel button{
+
+    width:170px;
+
+    height:64px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:rgba(247,243,237,.92);
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+/* 世界聊天 */
+
+.chat-box{
+
+    position:absolute;
+
+    left:110px;
+
+    bottom:20px;
+
+    width:430px;
+
+    height:86px;
+
+    padding:14px;
+
+    border-radius:24px;
+
+    background:rgba(247,243,237,.92);
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+    color:#655b51;
+
+    line-height:28px;
+
+    z-index:120;
+}
+
+/* 底部导航 */
+
+.bottom-nav{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    bottom:18px;
+
+    display:flex;
+
+    gap:16px;
+
+    z-index:120;
+}
+
+.bottom-nav button{
+
+    width:88px;
+
+    height:88px;
+
+    border:none;
+
+    border-radius:28px;
+
+    background:rgba(247,243,237,.94);
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+/* 出征 */
+
+.march-btn{
+
+    position:absolute;
+
+    right:24px;
+
+    bottom:18px;
+
+    width:120px;
+
+    height:120px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#f4ead5;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#6c4b24;
+
+    cursor:pointer;
+
+    z-index:130;
+}
